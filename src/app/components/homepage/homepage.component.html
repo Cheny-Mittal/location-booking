@@ -1,0 +1,20 @@
+<div class="details-page__wrapper">
+    <div class="background-gradieπnt__circle"></div>
+    <div>
+        <section class="main-weather__card">
+            <section class="card-header__container-dark" [ngSwitch]="true">
+                <img class="city__illustration" src="./assets/map-image.png" />
+                <div class="header-content__wrapper">
+                    <div class="list-card">
+                        <ng-container *ngFor="let location of locationList">
+                            <app-list-card [detail]="location"></app-list-card>
+                        </ng-container>
+                    </div>
+                    <div class="city-name__container">
+                        <app-detail-card></app-detail-card>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="list-card-main-wrapper">
+    <div class="image-wrapper">
+        <img [src]="detail?.baseImage" alt="">
+    </div>
+    <div class="rest">
+        <ng-container *ngFor="let item of [].constructor(detail.rating); let i = index">
+            <mat-icon>star</mat-icon>
+        </ng-container>
+        <p>{{detail?.name}}</p>
+        <p>{{detail?.distance}} KM</p>
+    </div>
+    <div class="arrow-icon">
+        <mat-icon>keyboard_arrow_right</mat-icon>
+    </div>
+</div>

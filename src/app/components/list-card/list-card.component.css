@@ -1,0 +1,43 @@
+.list-card-main-wrapper{
+    display: flex;
+    background: #272222;
+    border-radius: 20px;
+    max-height: 120px;
+    margin: 20px 0;
+}
+
+.image-wrapper{
+    border-radius: 20px;
+    max-width: 30%;
+}
+
+.image-wrapper img{
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+    width: 100%;
+}
+
+.rest{
+    color: #ffd400;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.rest p{
+    margin: 5px 0 10px;
+}
+
+.rest mat-icon{
+    font-size: 14px;
+}
+
+
+.rest p:last-child{
+    margin: 5px 0 0px;
+}
+
+.arrow-icon{
+    color: #ffd400;
+    display: flex;
+    margin: auto;
+}

@@ -1,0 +1,53 @@
+<div class="details-page__wrapper">
+    <div class="background-gradient__circle"></div>
+    <div>
+        <section class="main-weather__card">
+            <section class="card-header__container-dark" [ngSwitch]="true">
+                <div class="header-content__wrapper">
+                    <div class="city-name__container">
+                        <div class="city-name__underline">
+                            <span class="city-name__text">Login</span>
+                        </div>
+                    </div>
+
+                    <div class="today-weather__container">
+                        <!--{{today}}-->
+                        <form action="" [formGroup]="loginForm" (submit)="login()">
+
+                            <div class="temp-state__container">
+                                <mat-form-field appearance="legacy">
+                                    <mat-label>Email</mat-label>
+                                    <input matInput formControlName="email">
+                                </mat-form-field>
+                            </div>
+                            <div class="temp-state__container">
+                                <mat-form-field>
+                                    <mat-label>Password</mat-label>
+                                    <input type="password" matInput formControlName="password">
+                                </mat-form-field>
+                            </div>
+                            <div class="temp-state__container">
+                                <button type="submit" mat-raised-button color="basic"> Login </button>
+                            </div>
+                            <div class="temp-state__container">
+                                <button mat-button color="basic" (click)="register()"> Don't have an account, Register </button>
+                            </div>
+                        </form>
+
+                        <!-- <div class="hum-wind__container">
+                            <div class="hum__container">
+                                <span class="hum__text">humidity</span>
+                                <span class="hum-value__text">12</span>
+                            </div>
+                            <div class="hum-wind__separator">&nbsp;</div>
+                            <div class="wind__container">
+                                <span class="wind__text">12</span>
+                                <span class="wind-value__text">K/M</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+</div>
